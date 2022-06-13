@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    background: linear-gradient(to left,#607d8b,#d459cb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.timer{
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    border-radius: 50px;
+    font-size: 25px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+p{
+    font-weight: 400;
+    color: gray;
+    padding: 30px 0;
+}
+
+.option a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#play, #reset{
+    border: 2px solid purple;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(45deg, #ff88fb, #ff00ec);
+    box-shadow: 0px 8px 25px #bf5fc045, 0px 8px 25px #ff00ec50 ;
+    transition: all ease 0.1s;
+}
+
+#pause{
+    border: 2px solid peru;
+    padding: 15px 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+    background: linear-gradient(45deg, #607d8b, #ff00ec);
+    box-shadow: 0px 8px 25px #bf5fc045, 0px 8px 25px #ff00ec50;
+    transition: all ease 0.1s;
+}
+
+#play:active, #reset:active, #pause:active {
+    transform: scale(0.95);
+}
+
+#pause fa{
+    margin-right: 5px;
+}
+
+#fa-play{
+    margin-left: 5px;
+}
+
+.container{
+    border: 2px solid black;
+    display: inline-block;
+    min-width: 250px;
+    min-height: 250px;
+    padding: 50px 15px;
+    background-color: #fff;
+    box-shadow: 0px 5px 25px #0000004a;
+}
+
+.timer svg{
+    position: absolute;
+    left: 0;
+}
+
+.defaultCircle{
+    opacity: 0.3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Baloo+Thambi+2&family=Roboto&display=swap');
