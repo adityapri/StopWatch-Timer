@@ -10,7 +10,7 @@ function playFun() {
         document.getElementById("play").innerText = "Pause";
     } else {
         stop();
-        playStop = 0;
+       
     }
 }
 
@@ -54,9 +54,11 @@ function reset(){
     document.getElementById("second").innerText = "00";
     document.getElementById("minute").innerText = "00";
     document.getElementById("hour").innerText = "00";
+    millisecond=0;second=0;minute=0;hour=0;
 }
 
 function stop() {
+    playStop = 0;
     clearInterval(id);
     document.getElementById("play").innerText = "Play";
 }
