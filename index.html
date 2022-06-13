@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer">
+
+            <svg width="280" height="280">
+                <circle class="defaultCircle" cx="125" cy="125" r="120" stroke="#ff88fb" stroke-width="10" fill="none"
+                    stroke-linecap="round"></circle>
+            </svg>
+
+            <span id="hour">00</span> :
+            <span id="minute">00</span> :
+            <span id="second">00</span> :
+            <span id="millisecond">00</span>
+        </div>
+        <p>Your time starts now</p>
+        <div class="option">
+            <a id="play" onclick="playFun()" href="javascript:void(0)"><i class="fa fa-play"></i>Play</a>
+            <a id="pause" onclick="stop()" href="javascript:void(0)"><i class="fa fa-pause"></i> Stop</a>
+            <a id="reset" onclick="reset()" href="javascript:void(0)"><i class="fa fa-reset"></i>Reset</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
